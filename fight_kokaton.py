@@ -129,6 +129,9 @@ class Bomb:
 
 
 class Beam:
+    """
+    ビームに関するクラス
+    """
     def __init__(self, bird: Bird):
         self.img = pg.image.load(f"{MAIN_DIR}/fig/beam.png")
         self.rct = self.img.get_rect()
