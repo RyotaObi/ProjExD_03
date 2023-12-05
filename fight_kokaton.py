@@ -135,7 +135,6 @@ class Beam:
         ビームを速度ベクトルself.vx, self.vyに基づき移動させる
         引数 screen：画面Surface
         """
-        
         self.rct.move_ip(self.vx, self.vy)
         screen.blit(self.img, self.rct)
 
@@ -166,6 +165,7 @@ def main():
                 pg.display.update()
                 time.sleep(1)
                 return
+            
         if beam is not None and bomb is not None:
             if beam.rct.colliderect(bomb.rct):
                 beam = None
